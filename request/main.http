@@ -1,0 +1,27 @@
+@api =  http://127.0.0.1:8000
+
+
+### Unprotected endpoint
+GET {{api}}/unprotected
+
+### Protected endpoint
+GET {{api}}/protected
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Nzc2ODcwMjYsImlhdCI6MTY3NzY4NjcyNiwic3ViIjoiam9obiJ9.jBfhXYFGNJd2SU5m69xSc7g1SHkMIFkWX8b6AH1ERzQ
+
+### Register an user
+POST {{api}}/register
+Content-Type: application/json
+
+{
+    "username": "john",
+    "password": "testing"
+}
+
+### Login
+POST {{api}}/login
+Content-Type: application/json
+
+{
+    "username": "john",
+    "password": "testing"
+}
