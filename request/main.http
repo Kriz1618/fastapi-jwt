@@ -22,6 +22,23 @@ POST {{api}}/login
 Content-Type: application/json
 
 {
-    "username": "john",
-    "password": "testing"
+    "username": "marles",
+    "password": "marles"
 }
+
+
+### Notes
+POST {{api}}/notes
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTI5MjE3MDMsImlhdCI6MTY5MjkyMTQwMywic3ViIjoibWFybGVzIn0.xElqscEAJjE5EO1fQw28hO5BF4-G9_y1aUD_iFtqtoU
+
+{
+    "text": "marles note 4",
+    "completed": false
+}
+
+
+
+### Protected endpoint
+GET {{api}}/notes
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTI5MjE3MDMsImlhdCI6MTY5MjkyMTQwMywic3ViIjoibWFybGVzIn0.xElqscEAJjE5EO1fQw28hO5BF4-G9_y1aUD_iFtqtoU
